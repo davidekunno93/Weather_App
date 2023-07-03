@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather App</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="placeholder" id="placeholder">
+        &nbsp;
+    </div>
+
+
+    <div class="big-container flx-c" id="big-div">
+        <p id="time-txt" style="position: absolute; left: 240px; top: 50px; font-size: xx-large;"></p>
+        <div class="search-box flx1">
+            <div class="input-group mb-2 mt-2 ml-2 mr-2" id="search-bar-div">
+                <input type="text" class="form-control" placeholder="Enter A City Name"
+                    aria-label="Recipient's username" aria-describedby="button-addon2" id="city">
+                <button class="btn btn-outline-secondary" type="button" id="search-button">Search</button>
+            </div>
+        </div>
+        <div id="display" class="flx-c flx15" style="display: none;">
+            <div class="weather-box bgc flx7">
+                <img id="city-image" src="#">
+            </div>
+            <div class="info-box bgc2 flx8 flx-c">
+
+                <div class="flx3 flx-r" style="margin-top: 20px;">
+                    <div class="weather flx1 center-text">
+                        <p class="wcol1 temp" id="temp">XXX</p>
+                        <p class="wcol3 temp"><span id="far"> &deg;F&nbsp; </span>| </p>
+                        <p class="wcol3 temp"><span class="point" id="cel"> &deg;C </span></p>
+                    </div>
+                    <div class="weather flx1">
+                        <span class="helper v-line"></span>
+                        <div class="vertical-middle">
+                            <div class="info-text" id="feels-like">Feels like: </div>
+                            <div class="info-text" id="humidity">Humidity: </div>
+                            <div class="info-text" id="wind">Wind: </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flx2 flx-r pad8">
+                    <img class="center" id="icon" src="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
