@@ -24,7 +24,7 @@ const farenheit = () => {
 }
 
 const getApi = async () => {
-    let city = doc.getElementById('city').value
+    let city = doc.getElementById('city').value.toLowerCase()
     console.log(city)
     let cityA = city.replace(" ", "-")
     let cityB = city.replace(" ", "+")
